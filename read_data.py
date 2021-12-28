@@ -6,10 +6,7 @@ cwd = os.getcwd()
 df = pd.read_csv(cwd + '/data_2021_main_dvs-soti_v1.1.csv')
 
 # select columns to analyse
-df = df[['HobbyTime', 'HobbyEnjoyment', 'HobbyPortfolio', 'HobbyVolunteer', 'HobbyShareMessages', 'HobbyBuildSkills',
-         'TopMethodsDVEduc_Books', 'TopMethodsDVEduc_Workshops', 'TopMethodsDVEduc_Examples', 'TopMethodsDVEduc_VideoTutorials',
-         'TopMethodsDVEduc_CollaborateWithMoreSkilled', 'TopMethodsDVEduc_WorkThroughProject',	'TopMethodsDVEduc_MentororTeach',
-         'TopMethodsDVEduc_Podcasts', 'TopMethodsDVEduc_InPersonFormats', 'TopMethodsDVEduc_VirtualFormats']]
+df = df[['HobbyTime', 'HobbyEnjoyment', 'HobbyPortfolio', 'HobbyVolunteer', 'HobbyShareMessages', 'HobbyBuildSkills']]
 
 # see length of df and count NaNs
 print('People who took the survey:', len(df))
